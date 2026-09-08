@@ -1,0 +1,174 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-ivory: var(--ivory);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+  --font-serif: var(--font-display), ui-serif, Georgia, serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 10px);
+}
+
+/* ------------------------------------------------------------------ */
+/*  LIGHT THEME  —  Ivory / charcoal / gold                            */
+/* ------------------------------------------------------------------ */
+:root {
+  --radius: 0.75rem;
+
+  --background: oklch(0.97 0.008 85);
+  --foreground: oklch(0.22 0.012 60);
+
+  --card: oklch(0.99 0.006 85);
+  --card-foreground: oklch(0.22 0.012 60);
+
+  --popover: oklch(0.99 0.006 85);
+  --popover-foreground: oklch(0.22 0.012 60);
+
+  --primary: oklch(0.58 0.11 74);
+  --primary-foreground: oklch(0.99 0.006 90);
+
+  --secondary: oklch(0.93 0.01 85);
+  --secondary-foreground: oklch(0.28 0.012 60);
+
+  --muted: oklch(0.93 0.01 85);
+  --muted-foreground: oklch(0.48 0.015 65);
+
+  --accent: oklch(0.9 0.03 82);
+  --accent-foreground: oklch(0.28 0.012 60);
+
+  --gold: oklch(0.62 0.12 76);
+  --gold-soft: oklch(0.62 0.12 76 / 0.14);
+  --ivory: oklch(0.97 0.008 85);
+
+  --destructive: oklch(0.55 0.2 27);
+  --border: oklch(0.86 0.012 80);
+  --input: oklch(0.88 0.012 80);
+  --ring: oklch(0.62 0.12 76);
+}
+
+/* ------------------------------------------------------------------ */
+/*  DARK THEME  —  Deep charcoal / warm gold / ivory                   */
+/* ------------------------------------------------------------------ */
+.dark {
+  --background: oklch(0.17 0.006 66);
+  --foreground: oklch(0.94 0.012 88);
+
+  --card: oklch(0.21 0.008 66);
+  --card-foreground: oklch(0.94 0.012 88);
+
+  --popover: oklch(0.2 0.008 66);
+  --popover-foreground: oklch(0.94 0.012 88);
+
+  --primary: oklch(0.8 0.12 84);
+  --primary-foreground: oklch(0.19 0.01 66);
+
+  --secondary: oklch(0.26 0.008 66);
+  --secondary-foreground: oklch(0.94 0.012 88);
+
+  --muted: oklch(0.26 0.008 66);
+  --muted-foreground: oklch(0.72 0.02 82);
+
+  --accent: oklch(0.3 0.02 78);
+  --accent-foreground: oklch(0.94 0.012 88);
+
+  --gold: oklch(0.82 0.13 85);
+  --gold-soft: oklch(0.82 0.13 85 / 0.16);
+  --ivory: oklch(0.94 0.012 88);
+
+  --destructive: oklch(0.7 0.19 22);
+  --border: oklch(0.92 0.02 85 / 0.12);
+  --input: oklch(0.92 0.02 85 / 0.16);
+  --ring: oklch(0.82 0.13 85);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: var(--gold);
+    color: var(--primary-foreground);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Utilities                                                          */
+/* ------------------------------------------------------------------ */
+@layer utilities {
+  .text-gold {
+    color: var(--gold);
+  }
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  .border-gold {
+    border-color: var(--gold);
+  }
+  .glass {
+    background: color-mix(in oklch, var(--background) 62%, transparent);
+    backdrop-filter: blur(16px) saturate(150%);
+    -webkit-backdrop-filter: blur(16px) saturate(150%);
+  }
+  .gold-glow {
+    box-shadow: 0 0 0 1px var(--gold-soft), 0 8px 40px -12px var(--gold-soft);
+  }
+  .text-glow {
+    text-shadow: 0 0 30px var(--gold-soft);
+  }
+  .gradient-gold {
+    background-image: linear-gradient(
+      120deg,
+      color-mix(in oklch, var(--gold) 92%, white) 0%,
+      var(--gold) 45%,
+      color-mix(in oklch, var(--gold) 70%, var(--foreground)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .radial-fade {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+  }
+}
