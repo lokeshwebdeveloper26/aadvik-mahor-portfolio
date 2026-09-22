@@ -241,6 +241,172 @@ export const modelData: ModelData = {
       alt: "AADVIK MAHOR lifestyle portrait",
       category: "Casual",
     },
+    {
+      src: "/portfolio/gallery-31.JPG",
+      alt: "AADVIK MAHOR lifestyle portrait",
+      category: "Casual",
+    },
+    {
+      src: "/portfolio/gallery-32.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-33.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-34.JPG",
+      alt: "AADVIK MAHOR campaign portrait",
+      category: "Campaign",
+    },
+    {
+      src: "/portfolio/gallery-35.JPG",
+      alt: "AADVIK MAHOR editorial portrait",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-36.JPG",
+      alt: "AADVIK MAHOR commercial portfolio",
+      category: "Commercial",
+    },
+    {
+      src: "/portfolio/gallery-37.JPG",
+      alt: "AADVIK MAHOR lifestyle portrait",
+      category: "Casual",
+    },
+    {
+      src: "/portfolio/gallery-38.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-39.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-40.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-41.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-42.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-43.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-44.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-45.JPG",
+      alt: "AADVIK MAHOR fashion portfolio",
+      category: "Fashion",
+      featured: true,
+    },
+    {
+      src: "/portfolio/gallery-46.JPG",
+      alt: "AADVIK MAHOR fashion portrait",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-47.JPG",
+      alt: "AADVIK MAHOR studio portrait",
+      category: "Studio",
+    },
+    {
+      src: "/portfolio/gallery-48.JPG",
+      alt: "AADVIK MAHOR outdoor portrait",
+      category: "Outdoor",
+      featured: true,
+    },
+    {
+      src: "/portfolio/gallery-49.JPG",
+      alt: "AADVIK MAHOR commercial portfolio",
+      category: "Commercial",
+    },
+    {
+      src: "/portfolio/gallery-50.JPG",
+      alt: "AADVIK MAHOR lifestyle portrait",
+      category: "Casual",
+    },{
+      src: "/portfolio/gallery-51.JPG",
+      alt: "AADVIK MAHOR lifestyle portrait",
+      category: "Casual",
+    },
+    {
+      src: "/portfolio/gallery-52.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-53.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-54.JPG",
+      alt: "AADVIK MAHOR campaign portrait",
+      category: "Campaign",
+    },
+    {
+      src: "/portfolio/gallery-55.JPG",
+      alt: "AADVIK MAHOR editorial portrait",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-56.JPG",
+      alt: "AADVIK MAHOR commercial portfolio",
+      category: "Commercial",
+    },
+    {
+      src: "/portfolio/gallery-57.JPG",
+      alt: "AADVIK MAHOR lifestyle portrait",
+      category: "Casual",
+    },
+    {
+      src: "/portfolio/gallery-58.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-59.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-60.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-61.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-62.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
+    {
+      src: "/portfolio/gallery-63.JPG",
+      alt: "AADVIK MAHOR fashion look",
+      category: "Fashion",
+    },
     
   ],
 
@@ -258,20 +424,20 @@ export const modelData: ModelData = {
     src: "/portfolio/videos/Aadvik-compressed.mp4",
     type: "mp4",
   },
-  /**{
+  {
     title: "AADVIK MAHOR Model Shoot",
-    category: "Fashion",
+    category: "LIVE ADVERTISEMENT RECORDING FOOTAGE",
     thumbnail: "/portfolio/profile.JPG",
-    src: "/portfolio/videos/Video-name.mp4",
+    src: "/portfolio/videos/Advik mahor (1).mp4",
     type: "mp4",
   },
   {
     title: "AADVIK MAHOR Model Shoot",
-    category: "Fashion",
+    category: "RAW Video FOOTAGE",
     thumbnail: "/portfolio/profile.JPG",
-    src: "/portfolio/videos/Video-name-compressed.mp4",
+    src: "/portfolio/videos/Advik mahor.mp4",
     type: "mp4",
-  },*/
+  },
 ],
 
    
