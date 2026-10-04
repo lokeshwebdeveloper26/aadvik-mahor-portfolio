@@ -387,16 +387,6 @@ export const modelData: ModelData = {
       alt: "AADVIK MAHOR fashion look",
       category: "Fashion",
     },
-    {
-      src: "/portfolio/gallery-60.JPG",
-      alt: "AADVIK MAHOR fashion look",
-      category: "Fashion",
-    },
-    {
-      src: "/portfolio/gallery-61.JPG",
-      alt: "AADVIK MAHOR fashion look",
-      category: "Fashion",
-    },
     
   ],
 
